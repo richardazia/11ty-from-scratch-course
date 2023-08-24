@@ -1,8 +1,8 @@
 ---
-title: 'Yet Another Hello Planet Earth'
+title: Issue 33 - From Page
 layout: 'layouts/home.html'
 intro:
-  eyebrow: 'Digital Marketing is our'
+  eyebrow: 'Digital Marketing is consistently our'
   main: 'Bread & Butter'
   summary: 'Let us help you create the perfect campaign with our multi-faceted team of talented creatives.'
   buttonText: 'See our work'
