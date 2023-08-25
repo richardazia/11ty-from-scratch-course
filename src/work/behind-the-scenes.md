@@ -1,5 +1,6 @@
 ---
 title: 'Behind the scenes'
+tags: work
 summary: 'A travel journal that transports you to some of the most
 beautiful places on earth.'
 displayOrder: 2
@@ -36,3 +37,5 @@ gallery:
     image: '/images/work/behind-the-scenes-gallery-3.jpg'
 team: [1, 4, 6]
 ---
+
+Something visible

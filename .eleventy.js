@@ -12,6 +12,14 @@ module.exports = config => {
   };
 }
 
+// Build Work
+
+exports.render = function(data) {
+  return `<ul>
+    ${data.collections.work.map(post => `<li>${post.data.title}</li>`).join("\n")}
+  </ul>`;
+};
+
 
 
 

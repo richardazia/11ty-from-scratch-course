@@ -1,0 +1,16 @@
+{% set workPrefix = work %}
+{% if workContent %}
+    {% set workPrefix = workContent %}
+{% endif %}
+
+<article class="[ work ] [ dot-shadow panel ] [ bg-dark-shade color-light ]">
+    <div class="wrapper">
+      <div class="[ work__inner ] [ flow ]">
+        <h2 class="[ work__heading ] [ headline ]" data-highlight="quaternary">{{ workPrefix.title }}</h2>
+        <p class="[ work__summary ] [ measure-short ]">{{ workPrefix.summary }}</p>
+        <div class="work__action">
+          <a class="button" data-variant="ghost" href="{{ workPrefix.buttonUrl }}">{{ workPrefix.buttonText }}</a>
+        </div>
+      </div>
+    </div>
+    </article>
