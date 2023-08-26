@@ -16,10 +16,14 @@ module.exports = config => {
 
 exports.render = function(data) {
   return `<ul>
-    ${data.collections.work.map(post => `<li>${post.data.title}</li>`).join("\n")}
+    ${data.collections.work.map(work => `<li>${work.data.title}</li>`).join("\n")}
   </ul>`;
 };
 
-
-
+module.exports = function(eleventyConfig) {
+  eleventyConfig.addCollection("work", function (collectionAPI) {
+    return collectionAPI.getFilteredByGlob("./src/work/*.md");
+  });
+};
+  
 
