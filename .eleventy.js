@@ -19,7 +19,3 @@ exports.render = function(data) {
     ${data.collections.work.map(post => `<li>${post.data.title}</li>`).join("\n")}
   </ul>`;
 };
-
-
-
-
