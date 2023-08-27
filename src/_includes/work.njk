@@ -1,0 +1,24 @@
+---
+title: A Pig's Breakfast
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <style>
+        h1 {
+            text-align: center,
+            text-color: blue
+        }
+    </style>
+  </head>
+  <body>
+    <h1>{{ title }}</h1>
+    <h2>{{ summary }}</h2>
+    <img src="{{hero.image}}" alt="{{hero.imageAlt}}">
+    {{ content | safe }}
+  </body>
+</html>

@@ -1,4 +1,5 @@
 ---
+layout: work.njk
 title: 'Behind the scenes'
 tags: work
 summary: 'A travel journal that transports you to some of the most
@@ -38,4 +39,7 @@ gallery:
 team: [1, 4, 6]
 ---
 
-Something visible
+# Some work content
+
+- Something visible
+- still visible
