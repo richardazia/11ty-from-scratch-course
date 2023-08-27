@@ -1,4 +1,5 @@
 ---
+layout: work.njk
 title: 'Brunch & Brew'
 tags: work
 summary: 'An app that helps to bring different generations together via
