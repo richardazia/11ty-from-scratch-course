@@ -1,4 +1,5 @@
 ---
+layout: post.njk
 title: '10 Tips for Website Redesign in 2020'
 date: '2020-01-02'
 tags: ['Tips And Tricks']

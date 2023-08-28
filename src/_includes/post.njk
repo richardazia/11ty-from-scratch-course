@@ -1,0 +1,31 @@
+---
+title: Post template
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <style>
+        h1 {
+            text-align: center
+        }
+
+        .article {
+        margin: auto;
+        width: 80%;
+        padding: 5px;
+    }  
+    </style>
+  </head>
+  <body>
+    <div class="article">
+        <h1>{{ title }}</h1>
+            <p>published: <i>{{ date }}</i></p>
+            <hr>
+            {{ content | safe }}
+    </div>
+  </body>
+</html>
