@@ -5,7 +5,7 @@ title: The Work Section
 
 ## The Work Section
 
-### I want the Navigation to be autuomated but I am struggling with directories and this.
+### I want the Navigation to be automated but I am struggling with directories and this
 
 * [Behind the Scenes](./behind-the-scenes)
 * [Breakfast Club](./breakfast-club)
