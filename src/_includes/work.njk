@@ -1,7 +1,6 @@
 ---
 title: Work Template
 ---
-
 <!doctype html>
 <html lang="en">
   <head>
@@ -9,16 +8,28 @@ title: Work Template
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ title }}</title>
     <style>
-        h1 {
+        h1, h2, h3 {
             text-align: center,
             text-color: blue
+        }
+
+        .article {
+        margin: auto;
+        width: 80%;
+        padding: 5px;
+        }  
+        img {
+            height: 600px;
+
         }
     </style>
   </head>
   <body>
-    <h1>{{ title }}</h1>
-    <h2>{{ summary }}</h2>
-    <img src="{{hero.image}}" alt="{{hero.imageAlt}}">
-    {{ content | safe }}
+    <div class="article">
+        <h1>{{ title }}</h1>
+        <h2>{{ summary }}</h2>
+        <img src="{{hero.image}}" alt="{{hero.imageAlt}}">
+        {{ content | safe }}
+    </div>
   </body>
 </html>
