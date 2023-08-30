@@ -26,6 +26,11 @@ title: Post template
             <p>published: <i>{{ date }}</i></p>
             <hr>
             {{ content | safe }}
+            <ul>
+              {%- for post in collections.post -%}
+                <li><a href="{{ post.url }}">{{ post.data.title }}</a></li>
+              {%- endfor -%}
+            </ul>
     </div>
   </body>
 </html>
