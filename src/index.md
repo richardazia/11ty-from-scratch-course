@@ -19,6 +19,9 @@ primaryCTA:
   buttonText: 'Buy a copy'
   buttonUrl: 'https://learneleventyfromscratch.com'
 
+featuredWork:
+  title: 'Selected work'
+  summary: 'Some stuff that should give you an idea of what we’re all about.'
 ---
 
 
