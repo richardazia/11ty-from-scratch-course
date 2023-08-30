@@ -1,0 +1,30 @@
+{
+    "items": [
+      {
+        "text": "Home",
+        "url": "/"
+      },
+      {
+        "text": "Behind the Scenes",
+        "url": "./behind-the-scenes"
+      },
+      {
+        "text": "Breakfast Club",
+        "url": "./breakfast-club"
+      },
+      {
+        "text": "Brunch and Brew",
+        "url": "./brunch-and-brew"
+      },
+      {
+        "text": "Outgoings",
+        "url": "./outgoings"
+      },
+      {
+        "text": "Travel Today",
+        "url": "./travel-today"
+      }
+    ]
+  }
+  
+  
