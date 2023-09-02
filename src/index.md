@@ -1,5 +1,6 @@
 ---
 title: 'Issue 33 - From Page'
+metaDesc: 'A made up agency site that you build if you learn Eleventy from Scratch by Picalilli'
 layout: 'layouts/home.html'
 intro:
   eyebrow: 'Digital Marketing is consistently our'
