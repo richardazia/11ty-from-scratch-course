@@ -1,16 +1,19 @@
-const gulp = require('gulp');
+const {parallel, watch} = require('gulp');
+
+// Pull in each task
 const sass = require('gulp-sass')(require('sass'));
 
-// Define a 'gulpSass' task using a Promise
-gulp.task('gulpSass', function () {
-  return new Promise(function (resolve, reject) {
-    gulp.src('src/scss/**/*.scss')
-      .pipe(sass())
-      .pipe(gulp.dest('dist/css'))
-      .on('end', resolve) // Resolve when the task is done
-      .on('error', reject); // Handle errors
-  });
-});
+// Set each directory and contents that we want to watch and
+// assign the relevant task. `ignoreInitial` set to true will
+// prevent the task being run when we run `gulp watch`, but it
+// will run when a file changes.
+const watcher = () => {
+  watch('./src/scss/**/*.scss', {ignoreInitial: true}, sass);
+};
 
-// Define a 'default' task
-gulp.task('default', gulp.series('gulpSass'));
+// The default (if someone just runs `gulp`) is to run each task in parrallel
+exports.default = parallel(sass);
+
+// This is our watcher task that instructs gulp to watch directories and
+// act accordingly
+exports.watch = watcher;
