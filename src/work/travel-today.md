@@ -1,5 +1,4 @@
 ---
-layout: work.njk
 title: 'Travel Today'
 tags: work
 summary: 'A travel website to help make booking easier.'

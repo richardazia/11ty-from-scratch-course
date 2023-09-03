@@ -1,5 +1,4 @@
 ---
-layout: work.njk
 title: 'Outgoings iOS App'
 tags: work
 summary: 'A native iOS app to help people to keep a track of their finances by providing easy-to use tracking and organising capabilities.'

@@ -1,6 +1,8 @@
-{% extends "layouts/base.html" %}
-{% set peopleItems = helpers.filterCollectionByKeys(collections.people, team)  %}
+{% extends "layouts/base.html" %}  
+
 {% block content %}
+
+{% set peopleItems = helpers.filterCollectionByKeys(collections.people, team) %}
 
 <section class="work-item">
   <header class="hero">
@@ -49,19 +51,20 @@
         </figure>
       {% endfor %}
     </article>
+    
   </div>
   {% if peopleItems %}
-  <article class="[ no-js-hidden ] [ panel dot-shadow ] [ bg-light-glare ]">
-    <div class="[ wrapper ] [ flow flow-space-700 ]">
-      <h2 class="[ headline ] [ measure-micro color-quinary ]" data-highlight="dark">
-        Meet the team behind this project
-      </h2>
-      {% include "partials/people.html" %}
-    </div>
-  </article>
-{% endif %}
+      <article class="[ no-js-hidden ] [ panel dot-shadow ] [ bg-light-glare ]">
+        <div class="[ wrapper ] [ flow flow-space-700 ]">
+          <h2 class="[ headline ] [ measure-micro color-quinary ]" data-highlight="dark">
+            Meet the team behind this project
+          </h2>
+          {% include "partials/people.html" %}
+        </div>
+      </article>
+    {% endif %}
 </section>
 
-{% include "partials/cta.html %}
+{% include "partials/cta.html" %} 
 
 {% endblock %}
