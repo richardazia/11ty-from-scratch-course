@@ -17,5 +17,10 @@
     "concurrently": "^8.2.1",
     "gulp": "^4.0.2",
     "moment": "^2.29.4"
+  },
+  "devDependencies": {
+    "gulp-clean-css": "^4.3.0",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.66.1"
   }
 }

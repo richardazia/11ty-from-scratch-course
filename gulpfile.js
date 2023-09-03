@@ -1,7 +1,23 @@
+// ChatGPT suggestion
+const gulp = require('gulp');
+// const sass = require('gulp-sass');
+
+// Define a 'gulpSass' task
+gulp.task('gulpSass', function () {
+  return gulp.src('src/scss/**/*.scss')
+    .pipe(sass())
+    .pipe(gulp.dest('dist/css'));
+});
+
+// Define a 'default' task
+gulp.task('default', gulp.series('gulpSass'));
+
+
+// Course code
 const {parallel, watch} = require('gulp');
 
 // Pull in each task
-const sass = require('./gulp-tasks/sass.js');
+const sass = require('gulp-sass')(require('sass'));
 
 // Set each directory and contents that we want to watch and
 // assign the relevant task. `ignoreInitial` set to true will
