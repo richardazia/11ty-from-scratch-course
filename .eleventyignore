@@ -1,1 +1,4 @@
-node_modules
+# .eleventyignore
+
+_site/
+node_modules/
