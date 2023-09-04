@@ -17,8 +17,8 @@ module.exports = config => {
   config.addPlugin(rssPlugin);
   // Returns work items, sorted by display order
   // Returns work items, sorted by display order
-config.addCollection('work', collection => {
-  return sortByDisplayOrder(collection.getFilteredByGlob('./src/work/*.md'));
+  config.addCollection('work', collection => {
+    return sortByDisplayOrder(collection.getFilteredByGlob('./src/work/*.md'));
 });
 
 // Returns work items, sorted by display order then filtered by featured
