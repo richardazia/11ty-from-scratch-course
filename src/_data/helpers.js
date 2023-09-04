@@ -55,7 +55,22 @@ module.exports = {
     if (limit > 0) {
       filteredItems = filteredItems.slice(0, limit);
     }
-
     return filteredItems;
+  },
+
+  /**
+   * Take an array of keys and return back items that match.
+   * Note: items in the collection must have a key attribute in
+   * Front Matter
+   *
+   * @param {Array} collection 11ty collection
+   * @param {Array} keys collection of keys
+   * @returns {Array} result collection or empty
+   */
+  filterCollectionByKeys(collection, keys) {
+    return collection.filter(x => keys.includes(x.data.key));
   }
+
+
+
 };
